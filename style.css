@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Raleway:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Gradiente */
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    /* Neutral */
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    /*
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;*/
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url(./images/bg-mobile.png);
+        background-size: cover;
+    }
+    .container {        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        min-height: 100vh;
+        
+        
+    }
+
+    .seccion_1{
+        display: flex;        
+        width: 300px;
+        height: 190px;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 36px;                        
+        background-color: var(--DarkBlue);
+        border-radius: 15px 80px 15px 15px;
+    }
+
+    .superior {
+        padding-bottom: 20px;
+    }
+
+    .inferior{
+        display: flex;
+        gap: 15px;                
+    }
+
+    .contenedor_icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;        
+        border-radius: 15px;
+        background-color: var(--VeryDarkBlue);        
+    }
+
+    .seccion_2 {
+        display: flex;        
+        width: 300px;
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;                        
+        background-color: var(--DarkBlue);
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    .item_1 {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+    }
+
+    .item_1_text {
+        color: var(--GrayishBlue);
+        font-weight: 400;
+    }
+
+    span {        
+        font-weight: 600;
+        color: white
+    }
+
+    .rectangulo {
+        display: flex;
+        align-items: center;        
+        background-color: var(--VeryDarkBlue);
+        width: 250px;
+        height: 20px;
+        border-radius: 10px 10px 10px 10px;
+        border: 4px solid var(--VeryDarkBlue)
+    }
+
+    .barra_loading {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 1px;        
+        background: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%) );        
+        width: 180px;
+        height: 15px;
+        border-radius: 7px 7px 7px 7px;
+    }
+
+    .circulo{
+        height: 13px;
+        width: 13px;
+        background-color: white;
+        border-radius: 7px 7px 7px 7px;
+        
+    }
+
+    .item_3 {
+        display: flex;
+        gap: 170px;        
+    }
+
+    .item_3_text {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-size: 12px;
+        margin: 4;
+        font-weight: 700;
+
+    }
+
+    .seccion_3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        width: 180px;
+        height: 70px;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        bottom: 245px;
+        
+        
+    }
+
+    .seccion_3_text_number {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        color: var(--VeryDarkBlue);
+        font-weight: 700;
+    }
+
+    .seccion_3_text {
+        margin-top: 25px;
+        color: var(--GrayishBlue);
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+    body {
+        background-image: url(./images/bg-desktop.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {        
+        display: grid;
+        max-width: 1440px;
+        height: 600px;        
+        grid-template-columns: repeat(8 , 1fr);        
+        grid-template-rows: repeat(8 , 1fr);
+        grid-gap: 20px; 
+
+        
+    }
+
+    .seccion_1 {
+        grid-column: 2 / 5;
+        grid-row: 4 / 6
+    }
+
+    .seccion_2 {
+        grid-column: 5 / 9;
+        grid-row: 4 / 6;
+    }
+
+    .attribution {
+        grid-column: 4 / 6;
+        grid-row: 6 / 7;
+    }
+
+    .seccion_1{
+        margin-left: 0px ;        
+        width: 500px;
+        height: 230px;        
+    }
+    
+    .img_icons {
+        width: 35px;
+    }
+
+    .inferior{
+        gap: 25px;                
+    }
+
+    .contenedor_icons {
+        width: 63px;
+        height: 63px;   
+    }
+
+    .seccion_2 {
+        margin-top: 40px;        
+        width: 600px; 
+    }
+
+    .item_1 {        
+        font-size: 20px;
+    }   
+
+    .rectangulo {
+        width: 500px;  
+    }
+
+    .barra_loading {
+        width: 340px;
+    }
+
+    .item_3 {
+        display: flex;
+        gap: 410px;        
+    }
+
+    .item_3_text {
+        font-size: 15px;
+    }
+
+    .seccion_3 {        
+        width: 200px;
+        height: 80px;        
+        position: relative;
+        top: 340px;
+        left: 1105px;
+    }
+
+    .seccion_3_text_number {
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        color: var(--VeryDarkBlue);
+        font-weight: 700;
+    }
+
+    .seccion_3_text {
+        margin-top: 25px;
+        color: var(--GrayishBlue);
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        margin-right: 45px;
+    }
+    
+    .triangulo {
+        
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 60px 60px 0px;
+        border-color: transparent transparent white transparent;
+        transform: rotate(180deg); /* rotar el triángulo 45 grados */
+        position: relative;
+        top: 380px;
+        left: 1025px;
+    }
+
+    .item_1 {
+        margin-right: 170px;
+    }
+
+
+
+
+
+
+
+}
